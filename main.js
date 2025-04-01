@@ -32,45 +32,35 @@
 //     }
 // });
 
-const sections = ["dog_section", "bird_section", "cat_section", "turtle_section","hamster_section","rabbit_section"];
+const sections = ["dog_section", "bird_section", "cat_section", "turtle_section", "hamster_section", "rabbit_section"];
 
-    function showSection(sectionId) {
-        sections.forEach(id => {
-            const section = document.getElementById(id);
-            if (section) {
-                section.classList.add("hidden");
-                section.classList.remove("block");
-            }
-        });
+function toggleSection(sectionId) {
+    const selectedSection = document.getElementById(sectionId);
 
-        const selectedSection = document.getElementById(sectionId);
-        if (selectedSection && selectedSection.classList.contains("hidden")) {
-            selectedSection.classList.remove("hidden");
-            selectedSection.classList.add("block");
+    if (!selectedSection) return; 
+
+    const isAlreadyVisible = !selectedSection.classList.contains("hidden");
+    sections.forEach(id => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.classList.add("hidden");
+            section.classList.remove("block");
         }
+    });
+
+    if (!isAlreadyVisible) {
+        selectedSection.classList.remove("hidden");
+        selectedSection.classList.add("block");
     }
+}
 
-    document.getElementById("dog").addEventListener("click", function () {
-        showSection("dog_section");
-    });
-
-    document.getElementById("bird").addEventListener("click", function () {
-        showSection("bird_section");
-    });
-
-    document.getElementById("cat").addEventListener("click", function () {
-        showSection("cat_section");
-    });
-
-    document.getElementById("turtle").addEventListener("click", function () {
-        showSection("turtle_section");
-    });
-
-    document.getElementById("hamster").addEventListener("click", function () {
-        showSection("hamster_section");
-    });
+sections.forEach(sectionId => {
+    const buttonId = sectionId.replace("_section", "");
+    const button = document.getElementById(buttonId);
     
-    document.getElementById("rabbit").addEventListener("click", function () {
-        showSection("rabbit_section");
-    });
-    
+    if (button) {
+        button.addEventListener("click", function () {
+            toggleSection(sectionId);
+        });
+    }
+});
