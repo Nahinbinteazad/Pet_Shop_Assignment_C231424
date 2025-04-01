@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/e01d2068c5.js" crossorigin="anonymous"></script>
+<script>
+    tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'color': 'rgb(255, 220, 38)',
+          'goll':'rgb(255, 249, 244)',
+          'col':'rgb(17, 17, 17)',
+          'box':'rgb(249, 223, 138)',
+          'ani':'rgb(255, 249, 244)',
+        },
+        keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 2s ease-in-out",
+      },
+      },
+    },
+  };
+  </script>
+</head>
+<body> 
+    <header class="md:container mx-auto">
+    
+        <section class="flex items-center">
+            <div class="mt-20  flex flex-col items-start px-5 lg:px-0  mx-auto">
+                <div class=" self-start ">
+                    <h1 class="font-bold md:text-3xl text-xl w-full ">Browse By Categories</h1>
+                </div>
+                <div class="flex flex-col justify-center justify-items-center md:w-auto w-[300px] h- items-center mt-[50px] ">
+                    
+                    <div class="grid grid-rows-1 lg:grid-cols-3 md:grid-cols-2   gap-[50px] bg-goll p-[60px] rounded-lg">
+                        <!-- dog section  -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#f9df8a] to-[#f9df5a] p-6 rounded-lg flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="bg-white rounded-lg p-3 w-[200px] transition-transform duration-300 hover:scale-110 shadow-md" src="dog_image/dog_main.jpg" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-xs">DOG ESSENTIALS</p>
+                            <button id="dog" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+
+                        <!-- dog carousal part  -->
+
+                        <div id="dog_section" class="hidden md:col-span-full md:w-auto w-[200px] ">-
+                            <!-- dog section 1  -->
+                            <div id="dog_section1" >
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Dog Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 mt-5">
+                                            <figure class="">
+                                              <img
+                                                src="dog_image/dogfood1.avif"
+                                                alt="Shoes"
+                                                class="rounded-xl md:w-[150px] w-[60px] " />
+                                            </figure>
+                                            <div class="flex flex-col items-center gap-2">
+                                              <h2 class="font-bold mt-2 text-sm">Food_1</h2>
+                                              <p class="md:text-sm text-xs">$23.99</p>
+                                              <div class="card-actions">
+                                                <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                              <img
+                                                src="dog_image/dogfood2.avif"
+                                                alt="Shoes"
+                                                class="rounded-xl md:w-[150px] w-[60px] " />
+                                            </figure>
+                                            <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_2</h2>
+                                                <p class="md:text-sm text-xs">$23.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs">Buy Now</button>
+                                                </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                  <img
+                                                    src="dog_image/dogfood3.avif"
+                                                    alt="Shoes"
+                                                    class="rounded-xl md:w-[150px] w-[60px]" />
+                                                </figure>
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Food_3</h2>
+                                                    <p class="md:text-sm text-xs">$23.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                  <img
+                                                    src="dog_image/dog_food.png"
+                                                    alt="Shoes"
+                                                    class="rounded-xl md:w-[150px] w-[60px]" />
+                                                </figure>
+                                                <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Food_1</h2>
+                                                    <p class="md:text-sm text-xs">$23.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs">Buy Now</button>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- dog section 2 -->
+                            <div id="dog_section2">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Dog Belts</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="dog_image/dog_belt1.avif"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[80px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Belt_1</h2>
+                                                <p class="md:text-sm text-xs">$23.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="dog_image/dog_belt2.avif"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] md:h-[100px] h-[50px] w-[80px] object-cover" />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Belt_2</h2>
+                                                <p class="md:text-sm text-xs">$23.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="dog_image/dog_belt3.avif"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[150px] w-[60px] " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Belt_3</h2>
+                                                    <p class="md:text-sm text-xs">$23.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="dog_image/dog_belt4.avif"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[150px] w-[80px] " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Belt_4</h2>
+                                                    <p class="md:text-sm text-xs">$23.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- dog section 3 -->
+                             <div id="dog_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Dog Toys</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="/dog_image/dog_toy1.avif"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Plain/Zigzag Ball</h2>
+                                                <p class="md:text-sm text-xs">$23.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="/dog_image/dog_toy2.avif"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] md:h-[100px] h-[50px] w-[90px] object-cover" />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Puzzle</h2>
+                                                <p class="md:text-sm text-xs">$2.29</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="/dog_image/dog_toy3.avif"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[150px] w-[80px] " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Donut Toy</h2>
+                                                    <p class="md:text-sm text-xs">$3.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="/dog_image/dog_toy4.avif"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[150px] w-[80px] " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Toy Bundle</h2>
+                                                    <p class="md:text-sm text-xs">$23.99</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+                               
+                            </div>
+
+                        </div>
+
+                        <!-- bird section  -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#00aaff] to-[#A7C7E7] flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="bg-white rounded-lg p-3 md:w-[200px] w-[200px] md:h-[165px] h-[80px] object-cover transition-transform duration-300 hover:scale-110 shadow-md" src="Bird_image/bird_3.jpg" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-xs">BIRD ESSENTIALS</p>
+                            <button id="bird" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+                        <!-- bird carousal part  -->
+                        <div id="bird_section" class="hidden col-span-full md:w-auto w-[200px]">
+                            <!-- bird section 1  -->
+                            <div id="bird_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Bird Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/Bird_food1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_1</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/Bird_food2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_2</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/Bird_food3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_3</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="Bird_image/Bird_food4.jpg"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[100px] w-[60px] object-cover " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Food_4</h2>
+                                                    <p class="md:text-sm text-xs">$10.00</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/Bird_food5.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_5</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- bird section 2 -->
+                            <div id="cat_section2">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Bird House</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_house1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">BirdHouse_1</h2>
+                                                <p class="md:text-sm text-xs">$32.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_house2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">BirdHouse_2</h2>
+                                                <p class="md:text-sm text-xs">$18.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_house3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">BirdHouse_3</h2>
+                                                <p class="md:text-sm text-xs">$22.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- cat section 3 -->
+                             <div id="cat_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Bird Toys</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_toy1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Bell Toy</h2>
+                                                <p class="md:text-sm text-xs">$12.90</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_toy2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Chain Toy</h2>
+                                                <p class="md:text-sm text-xs">$20.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Bird_image/bird_toy3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Toy Bundle</h2>
+                                                <p class="md:text-sm text-xs">$43.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!-- turtle Section -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#2edbc4] to-[#c1e0ff]  flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="bg-white rounded-lg p-3 md:w-[200px] w-[200px] md:h-[165px] h-[90px] object-cover transition-transform duration-300 hover:scale-110 shadow-md" src="Turtle_image/tutle_2.jpg" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-[10.5px]">TURTLE ESSENTIALS</p>
+                            <button id="turtle" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+                        <!-- Turtle Carousal  -->
+                        <div id="turtle_section" class="hidden col-span-full md:w-auto w-[200px]">
+                            <!-- turtle section 1  -->
+                            <div id="turtle_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Turtle Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_food1.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_1</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_food2.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_2</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_food3.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_3</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- turtle section 2 -->
+                            <div id="turtle_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Turtle Medicines</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_med1.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Turtle Fix</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_med2.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Antibiotics</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_med3.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Eye Care</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- turtle section 3 -->
+                             <div id="turtle_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Turtle Aquarium</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_aqua1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Classic Aquarium</h2>
+                                                <p class="md:text-sm text-xs">$52.90</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_aqua2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Modern Aquarium</h2>
+                                                <p class="md:text-sm text-xs">$30.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Turtle_image/turtle_aqua3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Baby Aquarium</h2>
+                                                <p class="md:text-sm text-xs">$23.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+                        </div>
+
+
+                        <!-- cat section  -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#f9df8a] to-[#f9df5a] flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="bg-white rounded-lg p-3 md:w-[200px] w-[200px] md:h-[165px] h-[90px] object-cover transition-transform duration-300 hover:scale-110 shadow-md" src="Cat_image/cat_2.avif" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-xs">CAT ESSENTIALS</p>
+                            <button id="cat" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+
+                        <!-- cat carousal  -->
+                        <div id="cat_section" class="hidden col-span-full md:w-auto w-[200px]">
+                            <!-- cat section 1  -->
+                            <div id="cat_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Cat Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_food1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_1</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_food2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_2</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_food3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Food_3</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                    <img
+                                                      src="Cat_image/cat_food4.jpg"
+                                                      alt="Shoes"
+                                                      class="rounded-xl md:w-[150px] w-[90px] " />
+                                                  </figure>
+                                                  <div class="flex flex-col items-center gap-2">
+                                                    <h2 class="font-bold mt-2 text-sm">Food_4</h2>
+                                                    <p class="md:text-sm text-xs">$10.00</p>
+                                                    <div class="card-actions">
+                                                      <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- cat section 2 -->
+                            <div id="cat_section2">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Cat Carrier</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_backpack1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Backpack_1</h2>
+                                                <p class="md:text-sm text-xs">$32.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_backpack2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Backpack_2</h2>
+                                                <p class="md:text-sm text-xs">$22.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_backpack3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Backpack_3</h2>
+                                                <p class="md:text-sm text-xs">$43.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- cat section 3 -->
+                             <div id="cat_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Cat Toys</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_toys1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Feather Toy</h2>
+                                                <p class="md:text-sm text-xs">$12.90</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_toys2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Mouse+Ball Set</h2>
+                                                <p class="md:text-sm text-xs">$20.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Cat_image/cat_toys3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Toy Bundle</h2>
+                                                <p class="md:text-sm text-xs">$43.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- cat section 4 -->
+                             <div id="cat_section4">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Cat Food Holder</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl h-[400px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                              <img
+                                                src="Cat_image/cat_food_holder1.jpg"
+                                                alt="Shoes"
+                                                class="rounded-xl w-[150px] " />
+                                            </figure>
+                                            <div class="flex flex-col items-center gap-2">
+                                              <h2 class="font-bold mt-2">FoodHolder_1</h2>
+                                              <p class="text-sm">$23.99</p>
+                                              <div class="card-actions">
+                                                <button class="btn btn-primary">Buy Now</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                              <img
+                                              src="Cat_image/cat_food_holder2.jpg"
+                                              alt="Shoes"
+                                                class="rounded-xl w-[150px] h-[100px] object-cover" />
+                                            </figure>
+                                            <div class="flex flex-col items-center gap-2">
+                                              <h2 class="font-bold mt-2">FoodHolder_2</h2>
+                                              <p class="text-sm">$23.99</p>
+                                              <div class="card-actions">
+                                                <button class="btn btn-primary">Buy Now</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="carousel-item">
+                                            <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                                <figure class="">
+                                                  <img
+                                                  src="Cat_image/cat_food_holder3.jpg"
+                                                  alt="Shoes"
+                                                    class="rounded-xl w-[150px] " />
+                                                </figure>
+                                                <div class="flex flex-col items-center gap-2">
+                                                  <h2 class="font-bold mt-2">FoodHolder_3</h2>
+                                                  <p class="text-sm">$23.99</p>
+                                                  <div class="card-actions">
+                                                    <button class="btn btn-primary">Buy Now</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                        </div>
+
+                        <!-- hamster section  -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#00aaff] to-[#A7C7E7] flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="bg-white rounded-lg p-3 md:w-[200px] w-[200px] md:h-[165px] h-[90px] object-cover transition-transform duration-300 hover:scale-110 shadow-md" src="Hamster_image/hamster_1.jpg" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-[9px]">HAMSTER ESSENTIALS</p>
+                            <button id="hamster" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+                        <!-- hamster carousal  -->
+                        <div id="hamster_section" class="hidden col-span-full md:w-auto w-[200px]">
+                            <!-- cat section 1  -->
+                            <div id="hamster_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Hamster Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_food1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Grinded Food</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_food1=2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Mixture Blaster</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_food3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Grass</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- hamster section 2 -->
+                            <div id="hamster_section2">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Hamster House</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_house1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Otobi House</h2>
+                                                <p class="md:text-sm text-xs">$32.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_house2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Wooden House</h2>
+                                                <p class="md:text-sm text-xs">$32.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_house3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Mini House</h2>
+                                                <p class="md:text-sm text-xs">$23.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- Hamster section 3 -->
+                             <div id="hamster_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Hamster Toys</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_toy1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Roundy Toy</h2>
+                                                <p class="md:text-sm text-xs">$12.90</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_toy2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Running Toy</h2>
+                                                <p class="md:text-sm text-xs">$20.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Hamster_image/hamster_toy3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Artificial Carrot</h2>
+                                                <p class="md:text-sm text-xs">$43.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+                        </div>
+
+                        <!-- rabbit section  -->
+                        <div class="gap-2 p-10 bg-gradient-to-r from-[#2edbc4] to-[#c1e0ff] flex flex-col justify-center items-center justify-items-center rounded-lg shadow-xl">
+                            <img class="shadow-md bg-white rounded-lg p-3 md:w-[200px] w-[200px] md:h-[165px] h-[90px] object-cover transition-transform duration-300 hover:scale-110" src="Rabbit_image/rabbit_1.jpg" alt="">
+                            <p class="font-bold mt-1 md:text-lg text-[10px]">RABBIT ESSENTIALS</p>
+                            <button id="rabbit" class="btn md:btn-md btn-sm mt-2 hover:bg-[#00aaff] hover:text-white hover:border-2 hover:border-white transition-transform duration-200 hover:scale-90">Click Here</button>
+                        </div>
+                        <!-- rabbit carousal  -->
+                        <div id="rabbit_section" class="hidden col-span-full md:w-auto w-[200px]">
+                            <!-- rabbit section 1  -->
+                            <div id="rabbit_section1">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full ">Rabbit Food Items</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_food1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Grained Food</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_food2.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Carrots</h2>
+                                                <p class="md:text-sm text-xs">$12.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_food3.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[60px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Grass</h2>
+                                                <p class="md:text-sm text-xs">$13.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                            <!-- hamster section 2 -->
+                            <div id="hamster_section2">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Rabbit Medicines</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#43b1c2] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_med1.jpg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Vitamins</h2>
+                                                <p class="md:text-sm text-xs">$15.99</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_med2.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Tonic</h2>
+                                                <p class="md:text-sm text-xs">$32.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_med3.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">PA3</h2>
+                                                <p class="md:text-sm text-xs">$23.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_med4.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">EVE Med</h2>
+                                                <p class="md:text-sm text-xs">$23.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+
+                             <!-- Hamster section 3 -->
+                             <div id="rabbit_section3">
+                                <div class=" self-start ">
+                                    <h1 class="font-bold md:text-3xl text-xl w-full mt-5">Rabbit Toys</h1>
+                                </div>
+                               <div class="flex justify-center items-center mt-10">
+                                <div class="carousel carousel-center bg-[#f9be02] rounded-box max-w-xl md:h-[400px] h-[300px]  space-x-[130px] p-10 ">
+                                    <div class="carousel-item bg-blue">
+                                      <img
+                                        src=""
+                                        class="rounded-box " />
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_toy1.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] " />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">PapBall Toy</h2>
+                                                <p class="md:text-sm text-xs">$12.90</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_toy2.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] md:h-[120px]  object-cover" />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Running Toy</h2>
+                                                <p class="md:text-sm text-xs">$20.70</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item transition-transform duration-300 hover:scale-110">
+                                        <div class="card bg-base-200  shadow-xl pl-10 pr-10 pt-10 ">
+                                            <figure class="">
+                                                <img
+                                                  src="Rabbit_image/rabbit_toy3.jpeg"
+                                                  alt="Shoes"
+                                                  class="rounded-xl md:w-[150px] w-[90px] md:h-[120px]" />
+                                              </figure>
+                                              <div class="flex flex-col items-center gap-2">
+                                                <h2 class="font-bold mt-2 text-sm">Puzzle Box</h2>
+                                                <p class="md:text-sm text-xs">$43.00</p>
+                                                <div class="card-actions">
+                                                  <button class="btn btn-primary md:btn-md btn-xs mb-3">Buy Now</button>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="carousel-item bg-blue">
+                                        <img
+                                          src=""
+                                          class="rounded-box w-[50px]" />
+                                      </div>
+                                  </div>
+                               </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </header>
+    
+  <script src="/main.js"></script>
+</body>
+</html>
